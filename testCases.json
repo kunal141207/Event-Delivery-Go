@@ -1,0 +1,100 @@
+{
+	"info": {
+		"_postman_id": "16ff10ea-2ea9-4e49-b29d-2e7380b61eea",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "29494648"
+	},
+	"item": [
+		{
+			"name": "Failure At Consumer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"UserID\": \"user1\",\n    \"Payload\": \"failureConsumer\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/publish"
+			},
+			"response": []
+		},
+		{
+			"name": "Failure At Subscriber1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"UserID\": \"user2\",\n    \"Payload\": \"failure1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/publish"
+			},
+			"response": []
+		},
+		{
+			"name": "Failure At Subscriber2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"UserID\": \"user3\",\n    \"Payload\": \"failure2\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/publish"
+			},
+			"response": []
+		},
+		{
+			"name": "Failure At both Subscriber",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"UserID\": \"user4\",\n    \"Payload\": \"failure12\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/publish"
+			},
+			"response": []
+		},
+		{
+			"name": "Success",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"UserID\": \"user5\",\n    \"Payload\": \"random\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/publish"
+			},
+			"response": []
+		}
+	]
+}

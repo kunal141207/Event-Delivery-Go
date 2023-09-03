@@ -8,7 +8,7 @@ Before you begin, ensure you have met the following requirements:
 
 - [Go](https://golang.org/doc/install) installed on your machine.
 
-- update the redis url in redis 
+- update the redis url in utils 
 
 ## Running 
 

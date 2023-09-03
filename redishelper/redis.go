@@ -21,8 +21,8 @@ var (
 func InitializeRedisClient() error {
 	client = redis.NewClient(&redis.Options{
 		Addr:     utils.RedisServerAddress,
-		Password: "",
-		DB:       0,
+		Password: utils.RedisPassword,
+		DB:       utils.RedisDb,
 	})
 
 	// Test Redis Connection

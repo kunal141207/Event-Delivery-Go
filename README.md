@@ -11,4 +11,5 @@ Before you begin, ensure you have met the following requirements:
 ## Running 
 
 1 go build -o myapp
+
 2 ./myapp
